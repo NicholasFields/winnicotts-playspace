@@ -4,7 +4,7 @@ import { API } from "./stacks/MyStack";
 export default {
   config(_input) {
     return {
-      name: "portfolio-zave",
+      name: "winnicotts-playspace",
       region: "us-east-1",
     };
   },

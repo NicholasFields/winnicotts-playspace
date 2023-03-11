@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio-zave/functions",
+  "name": "@winnicotts-playspace/functions",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,9 +9,9 @@
   "devDependencies": {
     "@types/node": "^18.15.0",
     "@types/aws-lambda": "^8.10.111",
-    "sst": "^2.1.24"
+    "sst": "^2.1.25"
   },
   "dependencies": {
-    "sst": "^2.1.24"
+    "sst": "^2.1.25"
   }
 }

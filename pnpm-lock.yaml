@@ -7,22 +7,22 @@ importers:
       '@tsconfig/node16': ^1.0.3
       aws-cdk-lib: 2.62.2
       constructs: 10.1.156
-      sst: ^2.1.24
+      sst: ^2.1.25
       typescript: ^4.9.5
     devDependencies:
       '@tsconfig/node16': 1.0.3
       aws-cdk-lib: 2.62.2_constructs@10.1.156
       constructs: 10.1.156
-      sst: 2.1.24
+      sst: 2.1.25
       typescript: 4.9.5
 
   packages/core:
     specifiers:
       '@types/node': ^18.15.0
-      sst: ^2.1.24
+      sst: ^2.1.25
       vitest: ^0.29.2
     dependencies:
-      sst: 2.1.24
+      sst: 2.1.25
     devDependencies:
       '@types/node': 18.15.0
       vitest: 0.29.2
@@ -31,9 +31,9 @@ importers:
     specifiers:
       '@types/aws-lambda': ^8.10.111
       '@types/node': ^18.15.0
-      sst: ^2.1.24
+      sst: ^2.1.25
     dependencies:
-      sst: 2.1.24
+      sst: 2.1.25
     devDependencies:
       '@types/aws-lambda': 8.10.111
       '@types/node': 18.15.0
@@ -4321,8 +4321,8 @@ packages:
   /reinterval/1.1.0:
     resolution: {integrity: sha512-QIRet3SYrGp0HUHO88jVskiG6seqUGC5iAG7AwI/BV4ypGcuqk9Du6YQBUOUqm9c8pw1eyLoIaONifRua1lsEQ==}
 
-  /remeda/1.8.1:
-    resolution: {integrity: sha512-X7MpoWqenIx9Ts6DJ92mn0ottXvPUXbkeJr7AyGYYFxAkCtjIwgMpLo7mNMpFHyqFnerR4d2HPBVZkL/mSbrGQ==}
+  /remeda/1.9.0:
+    resolution: {integrity: sha512-dQolqsREsfF8hV6f67wiS4q/DkdsGr714NM1MwYqdMJEStDwkug6UD7ALPbEX7O4vWR3dFW6qJomKxHYhkX5lA==}
 
   /require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -4511,8 +4511,8 @@ packages:
   /splitargs/0.0.7:
     resolution: {integrity: sha512-UUFYD2oWbNwULH6WoVtLUOw8ch586B+HUqcsAjjjeoBQAM1bD4wZRXu01koaxyd8UeYpybWqW4h+lO1Okv40Tg==}
 
-  /sst/2.1.24:
-    resolution: {integrity: sha512-9vt7h93SF9U/DTHfdZiKvJo6Y3GVK93X8zhQ3pfFB4MV7GN1VOnW+3znAkBK7Y6iKfukfX2pd2QmJMEeexWI9A==}
+  /sst/2.1.25:
+    resolution: {integrity: sha512-tRXtR2k2jZeCcQu7IMhsYUmMuycdk50De235L4DsZ+A6ZeT4eCtSpvDNDGQ9SCAt9/5T4LtfSpavN8gokHvqOA==}
     hasBin: true
     peerDependencies:
       '@sls-next/lambda-at-edge': ^3.7.0
@@ -4583,7 +4583,7 @@ packages:
       ora: 6.1.2
       promptly: 3.2.0
       react: 17.0.2
-      remeda: 1.8.1
+      remeda: 1.9.0
       undici: 5.20.0
       uuid: 9.0.0
       ws: 8.13.0
