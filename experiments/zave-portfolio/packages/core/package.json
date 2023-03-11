@@ -1,5 +1,5 @@
 {
-  "name": "@nextjs-app/core",
+  "name": "@standard-nextjs/core",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

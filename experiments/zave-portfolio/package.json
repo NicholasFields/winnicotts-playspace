@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-app",
+  "name": "standard-nextjs",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -20,8 +20,5 @@
   },
   "workspaces": [
     "packages/*"
-  ],
-  "dependencies": {
-    "@sls-next/lambda-at-edge": "^3.7.0"
-  }
+  ]
 }

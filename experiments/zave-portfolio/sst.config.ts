@@ -1,14 +1,13 @@
 import { SSTConfig } from "sst";
-import { ExampleStack } from "./stacks/ExampleStack"
+import { Default } from "./stacks/Default";
 
 export default {
   config(_input) {
     return {
-      name: "nextjs-app",
+      name: "standard-nextjs",
       region: "us-east-1",
     };
   },
-  stacks(app) {
-    app.stack(ExampleStack)
-  },
+  stacks(app) {    app.stack(Default)
+},
 } satisfies SSTConfig;

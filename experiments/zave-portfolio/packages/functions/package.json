@@ -1,5 +1,5 @@
 {
-  "name": "@nextjs-app/functions",
+  "name": "@standard-nextjs/functions",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
