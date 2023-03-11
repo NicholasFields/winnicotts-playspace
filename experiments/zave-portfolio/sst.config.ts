@@ -1,5 +1,6 @@
 import { SSTConfig } from "sst";
 import { Default } from "./stacks/Default";
+import { Dns } from "./stacks/Dns";
 
 export default {
   config(_input) {
@@ -8,6 +9,8 @@ export default {
       region: "us-east-1",
     };
   },
-  stacks(app) {    app.stack(Default)
-},
+  stacks(app) {
+    app.stack(Dns);
+    app.stack(Default)
+  },
 } satisfies SSTConfig;
