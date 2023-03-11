@@ -13,3 +13,7 @@ node_modules
 
 # excluded folder
 .git-ignores-this-folder
+
+# lazygit on codespace
+lazygit
+lazygit.*
