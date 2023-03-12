@@ -48,8 +48,7 @@ export default function Home() {
           <div id="page-content">
             <section id="home" className="active-section">
               <span className="wordart-header type-contents">{'hello'}
-              </span><span id="name-header" className="wordart-header type-contents"> ______ ___   _____
-                nametext</span>
+              </span><span id="name-header" className="wordart-header type-contents">nametext</span>
               <p className="type-contents">(fullstack node.js developer)</p>
               <nav className="link-list">
                 <a className="type-contents" href="#about">[learn about me]</a>
