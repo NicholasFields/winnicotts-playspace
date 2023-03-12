@@ -1,5 +1,14 @@
 {
-  "search.exclude": {
-    "**/.sst": true
-  }
+  "search.exclude": { "**/.sst": true },
+  // autoformat on save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }, 
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript", 
+    "typescriptreact"
+  ]
 }
