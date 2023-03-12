@@ -2,17 +2,9 @@ import styles from './page.module.css';
 
 const Header = () => {
 	//
-	return 			(
+	return (
 		<head>
 			<title>Json Doe</title>
-			<meta
-				name="viewport"
-				content="width=device-width, initial-scale=1.0"
-			/>
-			<meta
-				property="og:title"
-				content="nick/portfolio"
-			/>
 			<link
 				rel="icon"
 				type="image/png"
@@ -92,19 +84,18 @@ export default function Home() {
 							id="home"
 							className="active-section"
 						>
-							<span className="wordart-header type-contents">{'hello'}
-							</span><span
+							<span className="wordart-header type-contents">
+								hello
+							</span>
+							<span
 								id="name-header"
 								className="wordart-header type-contents"
-							>nametext
+							>
+								nametext
 							</span>
 							<p className="type-contents">(fullstack node.js developer)</p>
 							<nav className="link-list">
-								<a
-									className="type-contents"
-									href="#about"
-								>[learn about me]
-								</a>
+								<a className="type-contents" href="#about">[learn about me]</a>
 								<a
 									className="type-contents"
 									href="#projects"
@@ -118,7 +109,7 @@ export default function Home() {
 							</nav>
 							<noscript>
 								<br />
-								<p style={ { fontSize: '0.7rem' } }>pssst.. this page is better with javascript enabled</p>
+								<p style={{ fontSize: '0.7rem' }}>pssst.. this page is better with javascript enabled</p>
 							</noscript>
 						</section>
 						<section
@@ -162,14 +153,15 @@ export default function Home() {
 								<br />
 								<table id="contact-info">
 									<tr>
-										<td><a
-											className="type-contents bracket-link"
-											href="mailto:nick@jsondoe.com"
-											target="_blank"
-											style={ { color: '#6D4AFF' } }
-											rel="noreferrer"
-										>[email]
-										</a>
+										<td>
+											<a
+												className="type-contents bracket-link"
+												href="mailto:nick@jsondoe.com"
+												target="_blank"
+												style={{ color: '#6D4AFF' }}
+												rel="noreferrer"
+											>[email]
+											</a>
 										</td>
 										<td className="type-contents">nick@jsondoe.com</td>
 									</tr>
@@ -178,7 +170,7 @@ export default function Home() {
 											className="type-contents"
 											href="https://twitter.com/twitterhandle"
 											target="_blank"
-											style={ { color: '#1D9BF0' } }
+											style={{ color: '#1D9BF0' }}
 											rel="noreferrer"
 										>[twitter]
 										</a>
@@ -188,7 +180,7 @@ export default function Home() {
 									<tr>
 										<td
 											className="type-contents"
-											style={ { color: '#454FBF ' } }
+											style={{ color: '#454FBF ' }}
 										>[discord]
 										</td>
 										<td className="type-contents">discordhandle</td>
