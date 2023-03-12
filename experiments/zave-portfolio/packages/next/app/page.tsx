@@ -4,88 +4,115 @@ import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <head>
+        <title>Json Doe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:title" content="nick/portfolio" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/navbar.css" />
+      </head>
+      <body>
+        <div id="scripted-page">
+          <header id="main-navbar">
+            <span id="navbar-title">
+              <span id="mini-navbar-root">~/</span><span id="full-navbar-root">nick/portfolio/</span><span id="current-location">nick</span>>
+            </span>
+            <span id="navbar-command" className="navbar-start-hidden"><span id="full-navbar-command" className="navbar-command-text">&nbsp;navigate&nbsp;</span><span id="mini-navbar-command" className="navbar-command-text">&nbsp;nav&nbsp;</span></span>
+            <nav id="navbar-links" className="navbar-start-hidden">
+              <ul>
+                <li id="home-link">
+                  <a href="#home">home</a>
+                </li>
+                <li id="about-link">
+                  <a href="#about">about</a>
+                </li>
+                <li id="projects-link">
+                  <a href="#projects">projects</a>
+                </li>
+                <li id="contact-link">
+                  <a href="#contact">contact</a>
+                </li>
+              </ul>
+            </nav>
+            <span id="blinking-cursor">▯</span>
+          </header>
+          <script src="./scripts/navbar.js"></script>
+
+          <div id="page-content">
+            <section id="home" className="active-section">
+              <span className="wordart-header type-contents">{'hello'}
+              </span><span id="name-header" className="wordart-header type-contents"> ______ ___   _____
+                nametext</span>
+              <p className="type-contents">(fullstack node.js developer)</p>
+              <nav className="link-list">
+                <a className="type-contents" href="#about">[learn about me]</a>
+                <a className="type-contents" href="#projects">[cool projects]</a>
+                <a className="type-contents" href="#contact">[chat with me]</a>
+              </nav>
+              <noscript>
+                <br />
+                <p style={{ fontSize: '0.7rem' }}>pssst.. this page is better with javascript enabled</p>
+              </noscript>
+            </section>
+            <section id="about" className="active-section">
+              <h1 className="wordart-header type-contents">about</h1>
+              <br />
+              <h2><span className="type-contents">hi, i'm</span> <span className="type-contents name">nick</span></h2>
+              <p className="about-paragraph type-contents">description stuff</p>
+              <p className="about-paragraph type-contents">description stuff</p>
+              <p className="about-paragraph type-contents">description stuff</p>
+            </section>
+            <section id="projects" className="active-section">
+              <h1 className="wordart-header type-contents">projects</h1>
+              <br />
+              <table id="projects-table">
+                <tr>
+                  <td className="type-contents">proj name</td>
+                  <td className="type-contents">proj desc</td>
+                  <td><a className="github-link type-contents" href="https://github.com/NicholasFields/proj-name" target="_blank">[github]</a></td>
+                </tr>
+              </table>
+            </section>
+            <section id="contact" className="active-section">
+              <h1 className="wordart-header type-contents">contact-ascii</h1>
+              <nav>
+                <br />
+                <table id="contact-info">
+                  <tr>
+                    <td><a className="type-contents bracket-link" href="mailto:nick@jsondoe.com" target="_blank" style={{ color: '#6D4AFF' }}>[email]</a></td>
+                    <td className="type-contents">nick@jsondoe.com</td>
+                  </tr>
+                  <tr>
+                    <td><a className="type-contents" href="https://twitter.com/twitterhandle" target="_blank" style={{ color: '#1D9BF0' }}>[twitter]</a></td>
+                    <td className="type-contents">@twitterhandle</td>
+                  </tr>
+                  <tr>
+                    <td className="type-contents" style={{ color: '#454FBF ' }}>[discord]</td>
+                    <td className="type-contents">discordhandle</td>
+                  </tr>
+                  <tr>
+                    <td><a className="type-contents github-link" href="https://github.com/NicholasFields" target="_blank">[github]</a></td>
+                    <td className="type-contents">@githubhandle</td>
+                  </tr>
+                </table>
+              </nav>
+            </section>
+            <section id="404">
+              <h1 className="wordart-header type-contents">
+                404</h1>
+              <p className="type-contents">Huh, this isn't an official page on this site, why aren't you using the navbar?</p>
+            </section>
+          </div>
+          <script src="./scripts/index.js"></script>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </body>
+    </>
   )
 }
