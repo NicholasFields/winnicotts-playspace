@@ -37,6 +37,7 @@ module.exports = {
 		'semi': [
 			'error',
 			'always'
-		]
+		],
+		'react/jsx-max-props-per-line': [1, { 'maximum': 1, 'when': 'always' }],
 	}
 };
