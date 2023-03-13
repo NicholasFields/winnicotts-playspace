@@ -46,10 +46,6 @@
   display: none;
 }
 
-#main-navbar nav > ul > li:not(:first-child)::before {
-  content: '\00a0|';
-}
-
 #main-navbar nav > ul > li > a {
   color: #00bfff;
   text-shadow: 0px 0px var(--default-text-glow-radius) #75d1ef;

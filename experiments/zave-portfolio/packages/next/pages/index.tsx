@@ -22,7 +22,11 @@ const HomeSection = () => (
 );
 
 export default function Home() {
-  return <HomeSection />;
+  return (
+    <>
+      <HomeSection />
+    </>
+  );
 }
 
 const notFoundSection = (
