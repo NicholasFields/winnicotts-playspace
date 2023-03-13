@@ -1,60 +1,66 @@
 import { useRouter } from 'next/router';
 import { useTypewriter } from 'react-simple-typewriter';
 
-const NickASCII = () => {
-  const [text] = useTypewriter({
-    words: [
-      `
-       _   _  _        _    
-      | \\ | |(_)      | |   
-      |  \\| | _   ___ | | __
-      | . \` || | / __|| |/ /
-      | |\\  || || (__ |   < 
-      \\_| \\_/|_| \\___||_|\\_\\       
-      `,
-    ],
-    loop: 0,
-    typeSpeed: 5,
+const jsonAscii = `
+      _  _____  ____  _   _ 
+     | |/ ____|/ __ \\| \\ | |
+     | | (___ | |  | |  \\| |
+ _   | |\\___ \\| |  | | . \` |
+| |__| |____) | |__| | |\\  |
+ \\____/|_____/ \\____/|_| \\_|
+                  
+`;
+
+const doeAscii = `
+ _____   ____  ______ 
+|  __ \\ / __ \\|  ____|
+| |  | | |  | | |__   
+| |  | | |  | |  __|  
+| |__| | |__| | |____ 
+|_____/ \\____/|______|
+`;
+
+const useAsciiTypeWriter = ({ asciiText = '', ...config }) => {
+  const [text, typeWriterHelper] = useTypewriter({
+    words: [asciiText],
+    loop: 3,
+    typeSpeed: 3,
     deleteSpeed: 0,
+    ...config,
   });
 
-  return <span>{text}</span>;
+  return [text, typeWriterHelper];
+};
+
+const DoeAscii = () => {
+  const [typedDoeAscii, { isDone }] = useAsciiTypeWriter({
+    asciiText: doeAscii,
+  });
+
+  return <>{typedDoeAscii}</>;
 };
 
 const HomeSection = () => {
-  const [imAscii, { isDone }] = useTypewriter({
-    words: [
-      `
-      _____  _            
-      |_   _|( )           
-        | |  |/  _ __ ___  
-        | |     | '_ \` _ \\ 
-       _| |_    | | | | | |
-       \\___/    |_| |_| |_|
-
-      `,
-    ],
-    loop: 1,
-    typeSpeed: 10,
-    deleteSpeed: 0,
+  const [typedJsonAscii, { isDone }] = useAsciiTypeWriter({
+    asciiText: jsonAscii,
   });
 
   return (
     <section id='home' className='active-section'>
-      <span className='wordart-header type-contents'>{imAscii}</span>
+      <span className='wordart-header type-contents'>{typedJsonAscii}</span>
       <span id='name-header' className='wordart-header type-contents'>
-        {isDone ? <NickASCII /> : ''}
+        {isDone ? <DoeAscii /> : ''}
       </span>
       <p className='type-contents'>(fullstack node.js developer)</p>
       <nav className='link-list'>
         <a className='type-contents' href='#about'>
-          [learn about me]
+          [who is json doe?]
         </a>
         <a className='type-contents' href='#projects'>
-          [cool projects]
+          [projects]
         </a>
         <a className='type-contents' href='#contact'>
-          [chat with me]
+          [contact]
         </a>
       </nav>
     </section>
